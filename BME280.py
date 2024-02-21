@@ -1,6 +1,15 @@
 import time
 from ustruct import unpack, unpack_from
 from array import array
+from machine import I2C, Pin
+
+# Pins used for I2C on PSoC board
+scl_pin = Pin('P6_0')
+sda_pin = Pin('P6_1')  
+
+i2c = I2C(0, scl=scl_pin, sda=sda_pin, freq=400000)  # Instantiate I2C with PSoC 6 pins
+
+sensor = BME280(i2c=i2c)
 
 # BME280 default address.
 BME280_I2CADDR = 0x76
@@ -24,12 +33,9 @@ BME280_TIMEOUT = const(100)  # about 1 second timeout
 
 class BME280:
 
-    def __init__(self,
-                 mode=BME280_OSAMPLE_8,
-                 address=BME280_I2CADDR,
-                 i2c=None,
-                 **kwargs):
-        # Check that mode is valid.
+    def __init__(self, i2c, mode=BME280_OSAMPLE_8, address=BME280_I2CADDR, **kwargs):
+        self.i2c = i2c
+        
         if type(mode) is tuple and len(mode) == 3:
             self._mode_hum, self._mode_temp, self._mode_press = mode
         elif type(mode) == int:
