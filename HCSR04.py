@@ -85,8 +85,4 @@ class HCSR04:
                 return -1
                 
         return time.ticks_us() - start
-        
-        
-sensor = HCSR04('P6_0', 'P6_1')
-while(1):
-    print(sensor.distance_cm())
+
