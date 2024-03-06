@@ -10,8 +10,10 @@
 
 - HCSR04 - Distance Sensor
 
+- HBridgeKit2Go - Motor Controller
+
 ## How To Install MicroPython
-Use following guide to download MicroPython. Currently, the only supported board for MicroPython development is the **CY8CPOROTO-062-4343W**
+Use following guide to download MicroPython. Currently, the only supported board for MicroPython development is the **CY8CPROTO-062-4343W**
 
 The following website has detailed instructions regarding downloading and using MicroPython 
 [MicroPython for PSoC 6](https://ifx-micropython.readthedocs.io/en/latest/psoc6/quickref.html)
