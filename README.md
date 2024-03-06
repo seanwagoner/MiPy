@@ -12,6 +12,8 @@
 
 - HBridgeKit2Go - Motor Controller
 
+- VL53L0X - Time of Flight Sensor
+
 ## How To Install MicroPython
 Use following guide to download MicroPython. Currently, the only supported board for MicroPython development is the **CY8CPROTO-062-4343W**
 
