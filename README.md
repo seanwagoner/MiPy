@@ -29,7 +29,7 @@ In order to use MicroPython with VS Code rather than Arduino Lab (The IDE automa
 
 __Why use VS Code?__ - VS Code has much more functionality than Arduino Lab and is an industry standard. Although Arduino Lab is designed specifically for MicroPython development, VS Code's GitHub Integration, and robust Code Error Detection makes developing with VS Code much easier. Arduino Lab unfortunately is a very barebones IDE with minimal functionality and no Code Error Detection. 
 
-The RT-Thread MicroPython extension has great documentation but below is a summarized version of said documentation tailored specifically for the **CY8CPOROTO-062-4343W**.
+The RT-Thread MicroPython extension has great documentation but below is a summarized version of said documentation tailored specifically for the **CY8CPROTO-062-4343W**.
 
 ### Preparation
 If you want to use the MicroPython autocompletion feature (you can skip the next step if you don't need autocompletion for now), you need to do the following:
@@ -92,7 +92,7 @@ Information regarding [PSoC 6 file structure](https://ifx-micropython.readthedoc
 1. Using ```ampy```, all commands work with PSoC Board except for ```run```. Using ```run``` only works immediately after the same file you plan to execute has been downloaded to the board using ```put```.
    
 
-2. VSCode does not have a manner in which to view the file structure of the MicroPython board (at least for Windows). Therefore, if a developer wannts to use the libraries above, they would need to use a different IDE such as [Thonny](https://thonny.org/), [Mu Editor](https://codewith.mu/), or [Arduino Lab](https://labs.arduino.cc/en/labs/micropython) to run onboard files.
+2. VSCode does not have a manner in which to view the file structure of the MicroPython board (at least for Windows). Therefore, if a developer wants to use the libraries above, they would need to use a different IDE such as [Thonny](https://thonny.org/), [Mu Editor](https://codewith.mu/), or [Arduino Lab](https://labs.arduino.cc/en/labs/micropython) to run onboard files.
 
 
 3. Any referenced libraries **must** be downloaded to the board inorder for the code relying on said dependencies to run.
