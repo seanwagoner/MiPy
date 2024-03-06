@@ -92,7 +92,7 @@ Information regarding [PSoC 6 file structure](https://ifx-micropython.readthedoc
 1. Using ```ampy```, all commands work with PSoC Board except for ```run```. Using ```run``` only works immediately after the same file you plan to execute has been downloaded to the board using ```put```.
    
 
-2. VS Code does not have a manner in which to view the file structure of the MicroPython Board (at least for Windows). There for, if a develope wannts to use the libraries above, they would need to use a different IDE such as [Thonny](https://thonny.org/), [Mu Editor](https://codewith.mu/), or [Arduino Lab](https://labs.arduino.cc/en/labs/micropython) to run onboard files.
+2. VSCode does not have a manner in which to view the file structure of the MicroPython board (at least for Windows). Therefore, if a developer wannts to use the libraries above, they would need to use a different IDE such as [Thonny](https://thonny.org/), [Mu Editor](https://codewith.mu/), or [Arduino Lab](https://labs.arduino.cc/en/labs/micropython) to run onboard files.
 
 
 3. Any referenced libraries **must** be downloaded to the board inorder for the code relying on said dependencies to run.
